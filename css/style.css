@@ -98,7 +98,7 @@
 }
 .main .left p{
     font-size: 20px;
-    color: #42526e;    
+    color: #fff;    
     margin-bottom: 30px;
 
 }
@@ -214,6 +214,7 @@
 .security ul li .compliance{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .security ul li .compliance .left{}
 .security ul li .compliance .left img{
@@ -355,7 +356,7 @@
 .developers .block .right{}
 .developers .block .right p{
     font-size: 12px;
-    color: #42526e;
+    color: #091e42;
 }
 .developers .block .right h2{
     margin: 15px 0;
@@ -365,7 +366,7 @@
 .developers .block .right h5{
     margin-bottom: 15px;
     font-size: 14px;
-    color: #42526e;
+    color: #091e42;
     font-weight: bolder;
 }
 .developers .block .right h6{}
@@ -385,6 +386,213 @@
     height: 45px;
     width: 100px;
 }
+.learn-more{
+    margin-bottom: 40px;
+
+}
+.learn-more h1{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    color: #253858;
+}
+.learn-more ul{
+    display: flex;
+    align-items: center;
+}
+.learn-more ul li{
+    list-style: none;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 5px;
+}
+.learn-more ul li .logo{
+    display: flex;
+}
+.learn-more ul li .logo img{
+    width: 143px;
+    height: 158px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.learn-more ul li .text{
+    text-align: left;
+}
+.learn-more ul li .text h2{
+    margin: 20px;
+    font-size: 24px;
+    color: #253858;
+}
+.learn-more ul li .text p{
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #091e42;
+}
+.learn-more ul li .text a{
+    text-decoration: none;
+    color: #1868DB;
+    margin-top: -10px;
+}
+.bitbucket-spin{
+    background-color: #1868DB;
+    margin-bottom: 30px;
+}
+.bitbucket-spin .wrapper{
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+}
+.bitbucket-spin .wrapper img{
+    height: 75px;
+    width: 75px;
+    margin-bottom: 16px;
+}
+.bitbucket-spin .wrapper h1{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.bitbucket-spin .wrapper a.button{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 7px 16px;
+    border-radius: 5px;
+}
+.bitbucket-spin .wrapper a.button:hover{
+    background-color: #5e6c84;
+}
+footer{
+    background-color: #2e2e2e;
+    padding: 20px;
+}
+footer .content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+}
+footer .content .left{}
+footer .content .left h2{
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #fff;
+    text-decoration: underline;
+}
+footer .content .left p{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 14px;
+
+}
+footer .content .left p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer .content .middle{
+    margin: 0;
+    padding: 0;
+}
+footer .content .middle h2{
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #fff;
+    text-decoration: underline;
+
+
+}
+footer .content .middle p{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 14px;
+}
+footer .content .middle p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer .content .right{}
+footer .content .right h2{
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #fff;
+    text-decoration: underline;
+
+
+}
+footer .content .right p{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 14px;
+}
+footer .content .right .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+footer .content .right .wrap input{
+    margin-right: 8px;
+    padding: 0 12px;
+    height:40px;
+    width: 100%;
+    border-radius: 5px;
+}
+footer .content .right .wrap a.button{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 7px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+footer .content .right .align p{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 14px;
+}
+footer .content .right .align{
+    display: flex;
+}
+footer .content .right .align ul{
+    display: flex;
+}
+footer .content .right .align ul li{
+    list-style: none;
+}
+footer .content .right .align ul li a{
+    font-size: 30px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
