@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Bit Bucket</title>
-    
-</head>
-<body>
-    <!-- code generation section -->
-       <!-- background-image: url(https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/29wvwnnvcjqtgb3x8fgtmqrh/Integrations_Graphics_Left.svg), url(https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/wr6pg4rrwxwwr5zcgrv999/Integrations_Graphics_Right.svg), url(https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/qz2n9nfb8zr79sps63wsc/Integration-neutral-bg.svg);
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="icon"
+            href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAbFBMVEUmhP////8Ae//0+P+Puf8Aef/2+v+Su/+Wvv8Tfv8dgf/y9v88kP9hn//6/P8Ad//o8P8Ac/86jP/G2//U4/++1f/c6P+hxP9KlP/L3v9oo/8th//i7P9+r/8AcP+vzP+Ftf9Ymv94qv+00f9o7ZCpAAAHeklEQVR4nO2d25qqOBCFJQqaoIKKZ91q+/7vODOXDXVidTMk+3Nd9gXkb8IiVamKk+wv0mTsAfymPjCx6gMTqz4wseoDE6s+MLGqDVNMe6sYTWsR5vZezHpr/jMtcB33NxZmvX/lVe7+X+U/UOVWuzUDs7v6SWJy2zMNMz0lxzKZ+FNBwuyqsUeGaHMmYWb52ANDVC1ImKcbe2CI3JOEOSb5ZPIjCXPejD0wRMw7UydpAFVNW/M1jD2y/grXKQmzXqX4nXnR35l1inbm7msSJnskaGfVI6NhdgnC5DsG5pCiARwYmHqbHE3Y1gxMmZ6d+VXJwBSz5OzMPacMzPqRHEx+5CLNBO3sm5l9h2mSMwDfsDCHZWI0YXlgYeqvxOzMX2oWpkzNzty9ZGGyY2IhTfXNzFow+8SeTL7PeJhzavHZToA5vJKCCadGgKkvSdmZv/CJ8yybphVstsysvT9zTOrJuEUmwTzGHl8vhYcIs08pPgvbvQjTnFKCOZ1FmKTszK9uIsz0nhLMVynCZPOUYJ6ZDHMce4R9dFRgErKzcH0oMId07KxjZh2YcpUOzOumwGTpeLO/FBrMPZkn47/aY+/ApGNnYabC7JMJNjtm1oU5pOLNYds2sy5MkYo3h2WtwmSp7GuEV2foXZhnKk+mY2YEzDEVmLkBZjf2KI1qx8wkzG3sURoVGgNMkci+xrVjZlRdM5bVDB4V+L87dUdOwGCrs+0K1QliCRcTzBHJavqvG1Df/Z9KLPHYiZlpmDOyTdvOYdtVYinh/G2CqbF88757JZNu2JIjb0dmNEwWkJfGd23fpgZzT9+OzBgY6OpuTlzdovMEuV2gBk797QtzgK7vm/SGZrV/GWEeyDZtOB2IS+kqsArknDAzEqZBaoLDtRMrmVTeoSezIcyMhCn+IJf3mJ3V2ILjD2FmdJsWVA2QHyEHuF2Rm03+UNciYaB/lm9tMBoFzWnazGgY6JscXpCdvaFp4FdmGMzOAmJn6zlkZq4bZnIw2KPfIHY2xdLBFWVmNEztkJfme4mhUSWWc9yQs4CEKaFEoLsDdlZDsywE8v0kYQro2YclYGcNBnOaUhcjYcAWBwfYGeQ1xG4GDwPeogIcAIzM5uTrScPsoFtUQEjzwiIz0swYmBsUn7l7b5YCW8w4eg7QMDUUn4VlbxjsIxAm1DKTgymhmuDge9sZ1oEYTrTV0DDFHHtpemdosHLdTp2JCAO2OPR3AKwq3C3ozzNz7ATW4uC6WyaKlpiZPeiFEwPTQCkT39sBsBTd994MFQasOsl7stRgZMa8mwwM2OKwoS2T1R56/8OLiZwYmCnW4sB8mVktsJwZl6Ljzp0BF4A91wBYmtnNyDUzD/OGbtN3DYAtZtgvAAdzxgo1Qi+WEts0YzN0HAza4tArqdFAtyDqTBQY0M6I/WxBD+zpc2bGwhRY1BSofDYrrBiE329gT9HCCjUCmZzjdIHu4Z5c4oSFeUBOE049ooApuEnfrgDWYfZYfLbt4QA3sHyCfS9ZmAb7t117rAF2kP2HJbt3wsKgLQ4L7oJdHbGZ/GJDQBamwFocQo8FDWhmFzY9x58JiLU4hJXZAdbYp8zf2ZQ2DwNOAnulRonlzIiiOR0Ga3HotE7xQruoWGcWYNAWB/5eg/+3eJgS82aq2ogWVtsu1RsIh4Ji3uwvVgeYYa/Mi7++AIMV0fFr2pYK0MyE1Z8AA04DqwOApVnSh0yA2WHbjdZarfPvG4wAA7Y4tBuOOYHtIFfhwQswa7CqzVipAZWCysty6YhjrP3Mr5ppaRBoZkthS1uCQVsctkuLsDSTGMpKMGiLQzAJvLa0KpdgzhHW0fMxswJTjz1yQkH6ikkwoJ0NqiDtM4gHtsd3cEu4SvU5Ikx8hwMEojfDCIPtawypbtesGaaJDiYXQz8RpowORq41EmEytOtoMFViFZgME5s3BycOV4bBStuHU9j+ACY2O3NEo5kZpoG6AoaTbGYKDNbiMJw2TJ2JCQbr2BpOf+QgVoHB0sGDqZLLwBWYuA7W9OLKTIXBeiiGklbRqsBgLQ5DSTEzDQarCR5KiplpMGVUCxqnpLEVGLC9ZRh9P529P0wR0y/seGE3wwIT1a84qA06Gswuommmtk5pMAeoJngY5drOjwZzi+i0I6/tymswER17HrZaobEGA7Y4DCG/0trANJgsnl9xaB9oDMBgHVtDyKmd4CpMPMeeq2amw8Rz7LlXlpkGmGjsLGzVeikVJpofpekcaAzARPOTgYYteR1mH8k7ky/UpnYd5hxJfOb0MhYdJhI7C1KdiRkmEjvrHmiMwKyfUcD4lV7HpsNEchYl1zXbEwZrcfht+Zl+QocBJo5jz8U6EztMHHa2NXRMGGBqrGfndxWW6jLTBLOOoVDDVJRrgMnmY5NMjOXSFhisaeeXYSytLBaYKI7Xt7QYmGAa7AyCX5Q/WfrZTTDZ7lSNOtM83zTXHyZr7pPKjabN6206oMsIk5Xn92I2kuZ7Y6+EFeZfgaf+/lzmk8Z6wMSvD0ys+sDEqg9MrPrAxKoPTKz6q2D+AfW+lgChpnQaAAAAAElFTkSuQmCC"
+            type="image/x-icon"
+        />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <title>Bit Bucket</title>
+    </head>
+    <body>
+        <!-- code generation section -->
+        <!-- background-image: url(https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/29wvwnnvcjqtgb3x8fgtmqrh/Integrations_Graphics_Left.svg), url(https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/wr6pg4rrwxwwr5zcgrv999/Integrations_Graphics_Right.svg), url(https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/qz2n9nfb8zr79sps63wsc/Integration-neutral-bg.svg);
         background-position: left top 50%, right top 50%, bottom center;
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: 25% auto, 25% auto, 100% auto; -->
-    <section class="header">
-        <div class="left">
-            <img src="images/bitbucketLogo.svg" alt="Logo">
-            <ul>
+        <section class="header">
+            <div class="left">
+                <img src="images/bitbucketLogo.svg" alt="Logo" />
+                <ul>
                     <li>
                         <a href="#">Why bit bucket</a>
                     </li>
@@ -27,320 +31,482 @@
                     <li>
                         <a href="#">Pricing</a>
                     </li>
-            </ul>
-        </div>
-        <div class="right">
-            <a class="button" href="#">Get it free</a>
-            <img src="images/search.png" alt="Search">
-            <a class="signin" href="#">Sign in</a>
-        </div>
-    </section>
-    <!-- header section -->
-    <section class="main">
-        <div class="left">
-            <h1>Code and CI/CD, powered by the Atlassian platform</h1>
-            <p>Elevate your software delivery from planning to production and beyond, with built-in AI, CI/CD, and a best-in-class Jira integration.</p>
-            <a href="#" class="button">Try it now</a>
-        </div>
-        <div class="right">
-            <img src="images/hero_image.webp" alt="Hero_Image">
-        </div>
-    </section>
-    <!-- main section -->
-    <section class="details">
-        <ul>
-            <li>
-                <img src="images/settings.png" alt="Settings">
-                <h3>Simplify your toolchain</h3>
-                <p>Put your code & CI/CD on one platform with capabilities spanning the entire software development lifecycle.</p>
-            </li>
-            <li>
-                <img src="images/energy.png" alt="Energy">
-                <h3>Accelerate velocity</h3>
-                <p>Eliminate tedious tasks with AI and automation. Reduce distractions and context switching by centralizing developer workflows on one platform.</p>
-            </li>
-            <li>
-                <img src="images/community.png" alt="Community">
-                <h3>Boost collaboration</h3>
-                <p>Easily share updates about code and CI/CD across software, ITOps, and business teams via Jira, Confluence, and the Atlassian platform.</p>
-            </li>
-        </ul>
-    </section>
-    <!-- details section -->
-    <section class="youtube">
-        <div class="left">
-            <img src="images/video.png" alt="Video">
-        </div>
-        <div class="right">
-            <h4>See code & CI/CD workflows on the Atlassian platform in action</h4>
-            <a href="#">
-                <img src="images/play.png" alt="Play">
-                Watch Now
-            </a>
-        </div>
-    </section>
-    <!-- video section -->
-     <section class="cloud-migration">
-        <section class="wrapper">
-            <h1>Migrating to the cloud?</h1>
-            <p>Try Bitbucket Cloud Premium at no cost, with the same user count and license period as your current<br> Data Center license.</p>
-            <a href="#">Learn More <img src="images/arrow.png" alt="Arrow"></a>
-        </section>
-     </section>
-     <!-- cloud migration section -->
-      <section class="security">
-        <div class="heading">
-            <h1>Security and compliance, at scale</h1>
-        </div>
-        <div class="security-block">
-            
-            <ul>
-                <li>
-                    <div class="compliance">
-                        <div class="left">
-                            <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/vphc2pgt367758cvfrxbwvkf/BB_Security_Screen1.png?auto=webp&format=png" alt="Security">
-                        </div>
-                        <div class="right">
-                            <h2>Org-wide quality control for your code</h2>
-                            <p>Enforce internal code quality policies and compliance requirements with standard or custom merge checks that are unique to your organization.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="security-block">
-            <ul>
-                <li>
-                    <div class="compliance">
-                        
-                        <div class="right">
-                            <h2>Build security into your entire workflow</h2>
-                            <p>Continuously monitor and fix security vulnerabilities during development, code review or as part of your CI/CD pipeline with native security capabilities or partners like Snyk, Synopsys, Sonar and others.</p>
-                        </div>
-                        <div class="left">
-                            <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/hhmm57vm74m7xpqjtq59g/BB_Security_Screen2.png?auto=webp&format=png" alt="Security">
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="security-block">
-            
-            <ul>
-                <li>
-                    <div class="compliance">
-                        <div class="left">
-                            <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/xxktt8fhf5n6tpc93rhbzjn/BB_Security_Screen3.png?auto=webp&format=png" alt="Security">
-                        </div>
-                        <div class="right">
-                            <h2>Platform-level CI/CD orchestration</h2>
-                            <p>Set and enforce CI/CD workflows at a platform level to ensure teams adhere to best practices and are compliant.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="security-block">
-            <ul>
-                <li>
-                    <div class="compliance">
-                        
-                        <div class="right">
-                            <h2>Granular access and usage permissions</h2>
-                            <p>Enforce internal code quality policies and compliance requirements with standard or custom merge checks that are unique to your organization.Control permissions at the workspace, project, or repo level or define specific branch level or environment level permissions.</p>
-                        </div>
-                        <div class="left">
-                            <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/qxfrmcwngfvzjpvr3rfxj49s/BB_Security_Screen4.png?auto=webp&format=png" alt="Security">
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-      </section>
-      <!-- security section -->
-       <section class="code-generation">
-        <div class="head">
-            <h1>AI that goes beyond code generation</h1>
-            <p>Atlassian infuses AI throughout the entire software lifecycle to improve developer experience and increase velocity.</p>
-        </div>
-        
-        <div class="wrap">
-            <div class="left">
-                <ul>
-                    <li>
-                        <h1>AI-generated PR descriptions</h1>
-                        <p>Automatically generate pull request summaries based on code changes and commit messages.</p>
-                    </li>
-                    <li>
-                        <h1>Generative AI editing</h1>
-                        <p>Help developers write comments and PR summaries to enhance writing clarity.</p>
-                    </li>
-                    <li>
-                        <h1>Atlassian Rovo</h1>
-                        <p>Find information across SaaS apps, learn and absorb project context faster, and accelerate productivity both within code and beyond it.</p>
-                        <a href="#">Explore Rovo <img src="images/arrow.png" alt="Arrow"></a>
-                    </li>
-                    <li>
-                        <h1>AI integrations</h1>
-                        <p>Use your preferred AI tool to get code suggestions with context from your Bitbucket repositories or have AI take a first pass at code review.</p>
-                        <a href="#">Explore more <img src="images/arrow.png" alt="Arrow"></a>
-
-                    </li>
                 </ul>
             </div>
             <div class="right">
-                <video src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/n7gjr4r53c4kp4ktcgmj56tc/AI_generated_PR_description-v6-4k.mp4" loop autoplay width="640" height="360"></video>
+                <a class="button" href="#">Get it free</a>
+                <img src="images/search.png" alt="Search" />
+                <a class="signin" href="#">Sign in</a>
             </div>
-    
-        </div>
-        <div class="link">
-            <a href="#">Learn how trust and safety are the cornerstones of Atlassian's approach to AI <img src="images/arrow.png" alt="Arrow"></a>
-        </div>
-       </section>
-       <!-- code generation section -->
-       <section class="premium">
-        <h1>Power up with Bitbucket Premium</h1>
-        <p>Create the exact development experience your organization needs with advanced governance and workflow settings, security controls, and more automated processes. Atlassian Intelligence features are also exclusively available in Bitbucket Premium.</p>
-        <a href="#">Learn more</a>
-       </section>
-       <!-- premium section -->
+        </section>
+        <!-- header section -->
+        <section class="main">
+            <div class="left">
+                <h1>Code and CI/CD, powered by the Atlassian platform</h1>
+                <p>
+                    Elevate your software delivery from planning to production
+                    and beyond, with built-in AI, CI/CD, and a best-in-class
+                    Jira integration.
+                </p>
+                <a href="#" class="button">Try it now</a>
+            </div>
+            <div class="right">
+                <img src="images/hero_image.webp" alt="Hero_Image" />
+            </div>
+        </section>
+        <!-- main section -->
+        <section class="details">
+            <ul>
+                <li>
+                    <img src="images/settings.png" alt="Settings" />
+                    <h3>Simplify your toolchain</h3>
+                    <p>
+                        Put your code & CI/CD on one platform with capabilities
+                        spanning the entire software development lifecycle.
+                    </p>
+                </li>
+                <li>
+                    <img src="images/energy.png" alt="Energy" />
+                    <h3>Accelerate velocity</h3>
+                    <p>
+                        Eliminate tedious tasks with AI and automation. Reduce
+                        distractions and context switching by centralizing
+                        developer workflows on one platform.
+                    </p>
+                </li>
+                <li>
+                    <img src="images/community.png" alt="Community" />
+                    <h3>Boost collaboration</h3>
+                    <p>
+                        Easily share updates about code and CI/CD across
+                        software, ITOps, and business teams via Jira,
+                        Confluence, and the Atlassian platform.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <!-- details section -->
+        <section class="youtube">
+            <div class="left">
+                <img src="images/video.png" alt="Video" />
+            </div>
+            <div class="right">
+                <h4>
+                    See code & CI/CD workflows on the Atlassian platform in
+                    action
+                </h4>
+                <a href="#">
+                    <img src="images/play.png" alt="Play" />
+                    Watch Now
+                </a>
+            </div>
+        </section>
+        <!-- video section -->
+        <section class="cloud-migration">
+            <section class="wrapper">
+                <h1>Migrating to the cloud?</h1>
+                <p>
+                    Try Bitbucket Cloud Premium at no cost, with the same user
+                    count and license period as your current<br />
+                    Data Center license.
+                </p>
+                <a href="#"
+                    >Learn More <img src="images/arrow.png" alt="Arrow"
+                /></a>
+            </section>
+        </section>
+        <!-- cloud migration section -->
+        <section class="security">
+            <div class="heading">
+                <h1>Security and compliance, at scale</h1>
+            </div>
+            <div class="security-block">
+                <ul>
+                    <li>
+                        <div class="compliance">
+                            <div class="left">
+                                <img
+                                    src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/vphc2pgt367758cvfrxbwvkf/BB_Security_Screen1.png?auto=webp&format=png"
+                                    alt="Security"
+                                />
+                            </div>
+                            <div class="right">
+                                <h2>Org-wide quality control for your code</h2>
+                                <p>
+                                    Enforce internal code quality policies and
+                                    compliance requirements with standard or
+                                    custom merge checks that are unique to your
+                                    organization.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="security-block">
+                <ul>
+                    <li>
+                        <div class="compliance">
+                            <div class="right">
+                                <h2>
+                                    Build security into your entire workflow
+                                </h2>
+                                <p>
+                                    Continuously monitor and fix security
+                                    vulnerabilities during development, code
+                                    review or as part of your CI/CD pipeline
+                                    with native security capabilities or
+                                    partners like Snyk, Synopsys, Sonar and
+                                    others.
+                                </p>
+                            </div>
+                            <div class="left">
+                                <img
+                                    src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/hhmm57vm74m7xpqjtq59g/BB_Security_Screen2.png?auto=webp&format=png"
+                                    alt="Security"
+                                />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="security-block">
+                <ul>
+                    <li>
+                        <div class="compliance">
+                            <div class="left">
+                                <img
+                                    src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/xxktt8fhf5n6tpc93rhbzjn/BB_Security_Screen3.png?auto=webp&format=png"
+                                    alt="Security"
+                                />
+                            </div>
+                            <div class="right">
+                                <h2>Platform-level CI/CD orchestration</h2>
+                                <p>
+                                    Set and enforce CI/CD workflows at a
+                                    platform level to ensure teams adhere to
+                                    best practices and are compliant.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="security-block">
+                <ul>
+                    <li>
+                        <div class="compliance">
+                            <div class="right">
+                                <h2>Granular access and usage permissions</h2>
+                                <p>
+                                    Enforce internal code quality policies and
+                                    compliance requirements with standard or
+                                    custom merge checks that are unique to your
+                                    organization.Control permissions at the
+                                    workspace, project, or repo level or define
+                                    specific branch level or environment level
+                                    permissions.
+                                </p>
+                            </div>
+                            <div class="left">
+                                <img
+                                    src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/qxfrmcwngfvzjpvr3rfxj49s/BB_Security_Screen4.png?auto=webp&format=png"
+                                    alt="Security"
+                                />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- security section -->
+        <section class="code-generation">
+            <div class="head">
+                <h1>AI that goes beyond code generation</h1>
+                <p>
+                    Atlassian infuses AI throughout the entire software
+                    lifecycle to improve developer experience and increase
+                    velocity.
+                </p>
+            </div>
+
+            <div class="wrap">
+                <div class="left">
+                    <ul>
+                        <li>
+                            <h1>AI-generated PR descriptions</h1>
+                            <p>
+                                Automatically generate pull request summaries
+                                based on code changes and commit messages.
+                            </p>
+                        </li>
+                        <li>
+                            <h1>Generative AI editing</h1>
+                            <p>
+                                Help developers write comments and PR summaries
+                                to enhance writing clarity.
+                            </p>
+                        </li>
+                        <li>
+                            <h1>Atlassian Rovo</h1>
+                            <p>
+                                Find information across SaaS apps, learn and
+                                absorb project context faster, and accelerate
+                                productivity both within code and beyond it.
+                            </p>
+                            <a href="#"
+                                >Explore Rovo
+                                <img src="images/arrow.png" alt="Arrow"
+                            /></a>
+                        </li>
+                        <li>
+                            <h1>AI integrations</h1>
+                            <p>
+                                Use your preferred AI tool to get code
+                                suggestions with context from your Bitbucket
+                                repositories or have AI take a first pass at
+                                code review.
+                            </p>
+                            <a href="#"
+                                >Explore more
+                                <img src="images/arrow.png" alt="Arrow"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <video
+                        src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/n7gjr4r53c4kp4ktcgmj56tc/AI_generated_PR_description-v6-4k.mp4"
+                        loop
+                        autoplay
+                        width="640"
+                        height="360"
+                    ></video>
+                </div>
+            </div>
+            <div class="link">
+                <a href="#"
+                    >Learn how trust and safety are the cornerstones of
+                    Atlassian's approach to AI
+                    <img src="images/arrow.png" alt="Arrow"
+                /></a>
+            </div>
+        </section>
+        <!-- code generation section -->
+        <section class="premium">
+            <h1>Power up with Bitbucket Premium</h1>
+            <p>
+                Create the exact development experience your organization needs
+                with advanced governance and workflow settings, security
+                controls, and more automated processes. Atlassian Intelligence
+                features are also exclusively available in Bitbucket Premium.
+            </p>
+            <a href="#">Learn more</a>
+        </section>
+        <!-- premium section -->
         <section class="advertise">
             <h1>Integrate Bitbucket with the tools you use</h1>
-            <p>Connect Bitbucket to market-leading partner tools across AI code generation, security, testing, monitoring, and more. Build custom integrations to meet the exact needs of your organization.  </p>
-            <a href="#">See all integrations <img src="images/arrow.png" alt="Arrow"></a>
+            <p>
+                Connect Bitbucket to market-leading partner tools across AI code
+                generation, security, testing, monitoring, and more. Build
+                custom integrations to meet the exact needs of your
+                organization.
+            </p>
+            <a href="#"
+                >See all integrations <img src="images/arrow.png" alt="Arrow"
+            /></a>
         </section>
         <!-- advertisement section -->
-         <section class="developers">
+        <section class="developers">
             <h1>15 million developers build on Bitbucket</h1>
             <div class="block">
                 <div class="left">
-                    <img src="images/profile.png" alt="Profile">
+                    <img src="images/profile.png" alt="Profile" />
                 </div>
                 <div class="right">
                     <p>1/4</p>
-                    <h2>“The Jira/Bitbucket integration has transformed the way our software teams are able to communicate, work together, and deploy code. It's been an absolute game changer for us.</h2>
-                    <h5>Nate Van Dusen, Engineering Program Management Director</h5>
+                    <h2>
+                        “The Jira/Bitbucket integration has transformed the way
+                        our software teams are able to communicate, work
+                        together, and deploy code. It's been an absolute game
+                        changer for us.
+                    </h2>
+                    <h5>
+                        Nate Van Dusen, Engineering Program Management Director
+                    </h5>
                     <h6>Trulia</h6>
                 </div>
             </div>
-         </section>
-         <!-- developers section -->
-          <section class="investors">
+        </section>
+        <!-- developers section -->
+        <section class="investors">
             <ul>
                 <li>
-                    <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/j7r6gbv6hhggshsj89rzwj/Logo-Grey-Rappi_2x_1.png?auto=webp&format=png" alt="Investor">
+                    <img
+                        src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/j7r6gbv6hhggshsj89rzwj/Logo-Grey-Rappi_2x_1.png?auto=webp&format=png"
+                        alt="Investor"
+                    />
                 </li>
                 <li>
-                    <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/pr2wr9sswgjvjcgngxr9q7c4/Logo-Grey-Invesco_2x.png?auto=webp&format=png" alt="Investor">
+                    <img
+                        src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/pr2wr9sswgjvjcgngxr9q7c4/Logo-Grey-Invesco_2x.png?auto=webp&format=png"
+                        alt="Investor"
+                    />
                 </li>
                 <li>
-                    <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/g68mbbwnbnj632xvg8b5v/Logo-Grey-Fugro_2x.png?auto=webp&format=png" alt="Investor">
+                    <img
+                        src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/g68mbbwnbnj632xvg8b5v/Logo-Grey-Fugro_2x.png?auto=webp&format=png"
+                        alt="Investor"
+                    />
                 </li>
                 <li>
-                    <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/tqt8jm2w3k5z6wj5gms9s3/Clearwater_Analytics_Logo.svg" alt="Investor">
+                    <img
+                        src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/tqt8jm2w3k5z6wj5gms9s3/Clearwater_Analytics_Logo.svg"
+                        alt="Investor"
+                    />
                 </li>
                 <li>
-                    <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/vb3qkb6bfz9p6r6gn5rskv3j/Logo-Grey-Nextiva_2x.png?auto=webp&format=png" alt="Investor">
+                    <img
+                        src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/vb3qkb6bfz9p6r6gn5rskv3j/Logo-Grey-Nextiva_2x.png?auto=webp&format=png"
+                        alt="Investor"
+                    />
                 </li>
                 <li>
-                    <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/vzbst8npspffpbpnc93g5zsn/Genesys_Logo.svg" alt="Investor">
+                    <img
+                        src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/vzbst8npspffpbpnc93g5zsn/Genesys_Logo.svg"
+                        alt="Investor"
+                    />
                 </li>
             </ul>
-          </section>
-          <section class="learn-more">
+        </section>
+        <section class="learn-more">
             <h1>Learn more</h1>
             <ul>
                 <li>
                     <div class="logo">
-                        <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/tfmg4cbbbj3c8qft53cjbm9/Card_spot_cloud.svg" alt="Logo">
+                        <img
+                            src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/tfmg4cbbbj3c8qft53cjbm9/Card_spot_cloud.svg"
+                            alt="Logo"
+                        />
                     </div>
                     <div class="text">
                         <h2>Migrate to Bitbucket cloud</h2>
-                        <p>Our free app moves your code and users from Bitbucket Server or Data Center to Cloud.</p>
-                        <a href="">Learn more <img src="images/arrow.png" alt="Arrow"></a>
+                        <p>
+                            Our free app moves your code and users from
+                            Bitbucket Server or Data Center to Cloud.
+                        </p>
+                        <a href=""
+                            >Learn more <img src="images/arrow.png" alt="Arrow"
+                        /></a>
                     </div>
                 </li>
                 <li>
                     <div class="logo">
-                        <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/jm3sfg3p3sgkt74mwcfvt/Card_spot_collaboration.svg" alt="Logo">
+                        <img
+                            src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/jm3sfg3p3sgkt74mwcfvt/Card_spot_collaboration.svg"
+                            alt="Logo"
+                        />
                     </div>
                     <div class="text">
                         <h2>Need a developer portal?</h2>
-                        <p>Make complex software easier to navigate. Understand repo ownership, map dependencies, and find info faster.</p>
-                        <a href="">Learn about Compass <img src="images/arrow.png" alt="Arrow"></a>
+                        <p>
+                            Make complex software easier to navigate. Understand
+                            repo ownership, map dependencies, and find info
+                            faster.
+                        </p>
+                        <a href=""
+                            >Learn about Compass
+                            <img src="images/arrow.png" alt="Arrow"
+                        /></a>
                     </div>
                 </li>
                 <li>
                     <div class="logo">
-                        <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/gw5ks7vnwvfcp78jqs5j6wc/Card_logo_Gartner.svg" alt="Logo">
+                        <img
+                            src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/gw5ks7vnwvfcp78jqs5j6wc/Card_logo_Gartner.svg"
+                            alt="Logo"
+                        />
                     </div>
                     <div class="text">
                         <h2>We’re a DevOps Platform Leader</h2>
-                        <p>Atlassian has been named a Leader in the 2024 Gartner® Magic Quadrant ™ for DevOps Platforms.</p>
-                        <a href="">See the report <img src="images/arrow.png" alt="Arrow"></a>
+                        <p>
+                            Atlassian has been named a Leader in the 2024
+                            Gartner® Magic Quadrant ™ for DevOps Platforms.
+                        </p>
+                        <a href=""
+                            >See the report
+                            <img src="images/arrow.png" alt="Arrow"
+                        /></a>
                     </div>
                 </li>
                 <li>
                     <div class="logo">
-                        <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/kvwhs5v5p6p5kvbf57j838/Card_spot_build.svg" alt="Logo">
+                        <img
+                            src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/kvwhs5v5p6p5kvbf57j838/Card_spot_build.svg"
+                            alt="Logo"
+                        />
                     </div>
                     <div class="text">
                         <h2>New features on the horizon</h2>
-                        <p>Learn more about what we’ve recently shipped and what we’re building next for your team.</p>
-                        <a href="">Learn more <img src="images/arrow.png" alt="Arrow"></a>
+                        <p>
+                            Learn more about what we’ve recently shipped and
+                            what we’re building next for your team.
+                        </p>
+                        <a href=""
+                            >Learn more <img src="images/arrow.png" alt="Arrow"
+                        /></a>
                     </div>
                 </li>
             </ul>
-          </section>
-          <!-- learn more section -->
-           <section class="bitbucket-spin">
-                <div class="wrapper">
-                    <img src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/73hphf4xp5shfr56pfvz4v/logo-light_Bitbucket_mark-tile_inverse_RGB.svg" alt="Logo">
-                    <h1>Take Bitbucket Cloud for a spin</h1>
-                    <a href="#" class="button">Try it now</a>
+        </section>
+        <!-- learn more section -->
+        <section class="bitbucket-spin">
+            <div class="wrapper">
+                <img
+                    src="https://wac-cdn-bfldr.atlassian.com/K3MHR9G8/at/73hphf4xp5shfr56pfvz4v/logo-light_Bitbucket_mark-tile_inverse_RGB.svg"
+                    alt="Logo"
+                />
+                <h1>Take Bitbucket Cloud for a spin</h1>
+                <a href="#" class="button">Try it now</a>
+            </div>
+        </section>
+        <!-- bitbucket spin section -->
+        <footer>
+            <div class="content">
+                <div class="left">
+                    <h2>Bitbucket</h2>
+                    <p>Blog</p>
+                    <p>Bitbucket writing program</p>
+                    <p>API</p>
+                    <p>Site Status</p>
                 </div>
-           </section>
-           <!-- bitbucket spin section -->
-            <footer>
-                <div class="content">
-                    <div class="left">
-                        <h2>Bitbucket</h2>
-                        <p>Blog</p>
-                        <p>Bitbucket writing program</p>
-                        <p>API</p>
-                        <p>Site Status</p>
+                <div class="middle">
+                    <h2>Resources</h2>
+                    <p>Technical support</p>
+                    <p>Documentation</p>
+                    <p>Plans & pricing</p>
+                    <p>What is Version Control?</p>
+                </div>
+                <div class="right">
+                    <h2>Connect with us</h2>
+                    <p>Sign up for Git articles and resources:</p>
+                    <div class="wrap">
+                        <input type="email" placeholder="Email" />
+                        <a href="#" class="button">Subscribe</a>
                     </div>
-                    <div class="middle">
-                        <h2>Resources</h2>
-                        <p>Technical support</p>
-                        <p>Documentation</p>
-                        <p>Plans & pricing</p>
-                        <p>What is Version Control?</p>
-                    </div>
-                    <div class="right">
-                        <h2>Connect with us</h2>
-                        <p>Sign up for Git articles and resources:</p>
-                        <div class="wrap">
-                            <input type="email" placeholder="Email">
-                            <a href="#" class="button">Subscribe</a>
-                        </div>
-                        <div class="align">
-                            <p>Connect with Bitbucket</p>
+                    <div class="align">
+                        <p>Connect with Bitbucket</p>
                         <ul>
                             <li>
                                 <a href="#" class="fa fa-facebook"></a>
                             </li>
                             <li>
                                 <a href="#" class="fa fa-twitter"></a>
-
                             </li>
                         </ul>
-                        </div>
-                        
                     </div>
                 </div>
-            </footer>
-
-        
-</body>
+            </div>
+        </footer>
+    </body>
 </html>
